@@ -12,5 +12,5 @@
    + Manajemen Murid
    + Manajemen Guru
    + Manajemen Nilai
-   + Email / Contact masuk
+   + Email / Contact masuk  
    + Manajemen Matapelajaran
