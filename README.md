@@ -20,3 +20,8 @@
    
  - Murid
    + Melihat Nilai
+   
+Yang akan di bikin
+- Page Profil
+- Page Daftar seperti web sekolah pada umumnya (standar)
+- Beranda bersifat dinamis
