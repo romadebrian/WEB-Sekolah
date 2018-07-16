@@ -16,4 +16,4 @@
    + Manajemen Matapelajaran
    
  - Guru
-   + Manajemen Nilai
+   + Manajemen Nilai 
