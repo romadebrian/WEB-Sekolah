@@ -1,11 +1,11 @@
 # WEB-Sekolah
- Content management system (CMS) untuk Web sekolah
- Untuk contoh runningnya bisa di lihat di sini
+ Content management system (CMS) untuk Web sekolah <br>
+ Untuk contoh runningnya bisa di lihat di sini <br>
  http://romadebrian.byethost24.com/
  
-<Admin>
+<p><Admin>
 username	: roma
-password	: 1
+password	: 1 </P>
 
 <Guru>
 username	: hendika
