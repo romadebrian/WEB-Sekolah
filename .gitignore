@@ -1,0 +1,50 @@
+
+# Created by https://www.gitignore.io/api/web,ph7cms,java-web,phpcodesniffer
+
+### Java-Web ###
+## ignoring target file
+target/
+
+### pH7CMS ###
+_test/*
+public/_repository/upgrade/*
+public/_install/_license-key.txt
+public/_install/data/caches/smarty_cache/*
+public/_install/data/caches/smarty_compile/*
+public/data/*
+public/_constants.php
+_protected/app/configs/config.ini
+_protected/app/system/core/assets/cron/_delay/
+_protected/data/tmp/
+_protected/data/backup/*
+_protected/data/cache/pH7_cache/*
+_protected/data/cache/pH7_static/*
+_protected/data/cache/pH7tpl_cache/*
+_protected/data/cache/pH7tpl_compile/*
+*.log
+*.tmp
+
+## Gettext ##
+*.mo
+
+### PHPCodeSniffer ###
+# CodeSniffer
+
+/vendor/*
+/wpcs/*
+
+### Web ###
+*.asp
+*.cer
+*.csr
+*.css
+*.htm
+*.html
+*.js
+*.jsp
+*.php
+*.rss
+*.xhtml
+
+
+# End of https://www.gitignore.io/api/web,ph7cms,java-web,phpcodesniffer
