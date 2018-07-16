@@ -3,18 +3,19 @@
  Untuk contoh runningnya bisa di lihat di sini <br>
  http://romadebrian.byethost24.com/
  
-<p><Admin>
+> Admin
 username	: roma
 password	: 1 </P>
 
-<Guru>
+> Guru
 username	: hendika
 password	: 1
 
-<Murid>
+> Murid
 username	: okky
 password	: 1
- 
+
+
  Fitur
  - Login
  - Level Akun
