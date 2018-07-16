@@ -1,5 +1,19 @@
 # WEB-Sekolah
  Content management system (CMS) untuk Web sekolah
+ Untuk contoh runningnya bisa di lihat di sini
+ http://romadebrian.byethost24.com/
+ 
+<Admin>
+username	: roma
+password	: 1
+
+<Guru>
+username	: hendika
+password	: 1
+
+<Murid>
+username	: okky
+password	: 1
  
  Fitur
  - Login
