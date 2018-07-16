@@ -7,7 +7,7 @@
  - Contact US
  
  Level Akses
- - Admin dwa
+ - Admin
    + Akun Control
    + Manajemen Murid
    + Manajemen Guru
