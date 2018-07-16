@@ -3,17 +3,17 @@
  Untuk contoh runningnya bisa di lihat di sini <br>
  http://romadebrian.byethost24.com/
  
-> Admin
-username	: roma
-password	: 1 </P>
+Admin <br>
+username	: roma <br>
+password	: 1 
 
-> Guru
-username	: hendika
-password	: 1
+Guru <br>
+username	: hendika <br>
+password	: 1 <br>
 
-> Murid
-username	: okky
-password	: 1
+Murid <br>
+username	: okky <br>
+password	: 1 <br>
 
 
  Fitur
