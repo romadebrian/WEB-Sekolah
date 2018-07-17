@@ -40,3 +40,4 @@ Yang akan di bikin
 - Page Profil
 - Page Daftar seperti web sekolah pada umumnya (standar)
 - Beranda bersifat dinamis
+- Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
