@@ -40,4 +40,11 @@ Yang akan di bikin
 - Page Profil
 - Page Daftar seperti web sekolah pada umumnya (standar)
 - Beranda bersifat dinamis
+- Bikin Pannel Pengaturan WEB
+  + Manajemen Posting
+  + Manajemen Beranda
+  + Manajemen Sejarah Sekolah
+  + Manajemen Jurusan
+  + Manajemen Fasilitas
+  + Pengaturan Title, Keyword, Logo, dan warna
 - Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
