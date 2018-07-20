@@ -1,10 +1,5 @@
 
 # Created by https://www.gitignore.io/api/web,ph7cms,java-web,phpcodesniffer
-### PHPCodeSniffer ###
-# CodeSniffer
-
-/vendor/*
-/wpcs/*
 
 ### Web ###
 *.asp
