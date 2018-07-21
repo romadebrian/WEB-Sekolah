@@ -37,6 +37,7 @@ password	: 1 <br>
    + Melihat Nilai
    
 Yang akan di bikin
+- System log mencatat waktu, IP addres, dan MAC addres ketika login
 - Page Profil
 - Page Daftar seperti web sekolah pada umumnya (standar)
 - Beranda bersifat dinamis
