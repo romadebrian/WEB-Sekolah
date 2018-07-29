@@ -38,12 +38,10 @@ password	: 1 <br>
    
 ############################################  
 Yang akan di bikin
-- Encrypt Password HASH tersendiri
 - System log mencatat waktu, IP addres, dan MAC addres ketika login
-- Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
-- Beranda bersifat dinamis
 - Page Profil
 - Page Daftar seperti web sekolah pada umumnya (standar)
+- Beranda bersifat dinamis
 - Bikin Pannel Pengaturan WEB
   + Manajemen Posting
   + Manajemen Beranda
@@ -51,4 +49,4 @@ Yang akan di bikin
   + Manajemen Jurusan
   + Manajemen Fasilitas
   + Pengaturan Title, Keyword, Logo, dan warna
-
+- Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
