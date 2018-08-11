@@ -53,3 +53,4 @@ Yang akan di bikin
   + Pengaturan Title, Keyword, Logo, dan warna
 
 Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!
+ssss
