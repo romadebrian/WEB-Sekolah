@@ -52,4 +52,4 @@ Yang akan di bikin
   + Manajemen Fasilitas
   + Pengaturan Title, Keyword, Logo, dan warna
 
-Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!
+Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues! 123
