@@ -1,0 +1,3 @@
+Cara membuat jadwal pelajaran yang memungkinkan 1 hari ada lebih dari 1 pelajaran dengan sistem simpan,edit hapus bisa 1 mata pelajaran saja
+
+no_hp guru di ubah varchar 30 agar bisa menambahkan 0 di awal nomor

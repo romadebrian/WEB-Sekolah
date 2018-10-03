@@ -1,0 +1,3 @@
+pakai logika
+jika data di database ada maka update
+jika data di database tidak ada maka input

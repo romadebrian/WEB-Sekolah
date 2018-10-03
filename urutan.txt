@@ -1,0 +1,41 @@
+##### Fitur berdasarkan hak akses #####
+
+<pengunjung>
+akutansi 
+fasilitas
+email
+otomotif
+profil sekolah
+rpl
+
+<Murid>
+index murid
+laporan nilai murid
+
+<Guru>
+index guru
+Nilai Guru
+
+<Admin>
+akun
+akun edit
+tambah akun
+
+guru
+tambah guru
+guru edit
+
+index
+
+nilai
+Input_Nilai
+
+murid
+tambah murid
+murid edit
+
+pesan
+
+Matapelajaran
+
+

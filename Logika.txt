@@ -1,0 +1,5 @@
+List mata pelajaran untuk di nilai guru di dapat dari table mata pelajaran berdasarkan nama guru
+
+di proses daftar tambahkan valiasi akun 
+
+pilih pelajaran -> menampilkan data yang ada di database (termasuk jurusan dan kelas) jika tidak ada maka ubah fungsi dari update menjadi input ->

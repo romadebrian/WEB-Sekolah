@@ -1,0 +1,18 @@
+
+# Created by https://www.gitignore.io/api/web,ph7cms,java-web,phpcodesniffer
+
+### Web ###
+*.asp
+*.cer
+*.csr
+*.css
+*.htm
+*.html
+*.js
+*.jsp
+*.php
+*.rss
+*.xhtml
+
+
+# End of https://www.gitignore.io/api/web,ph7cms,java-web,phpcodesniffer
