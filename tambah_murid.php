@@ -28,67 +28,115 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <?php include ('../napigasi2.php'); ?>
 
 <div class="clearfix"> </div> 
-<!-- //Modal2 -->
-	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
+<!-- Murid -->
+<div id="Edit_Murid">
 	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+    <h3 class="w3l-title cl"> Murid </h3>
+    <div class="container margin-atas">
+	
+<?php 
+include ('../koneksi.php');
+$tampil="SELECT * FROM `akun` ORDER BY `username` ASC ";
+$hasil=mysql_query($tampil);
+?>
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
+	
+    <form class="form-group" action="Proses_Tambah_Murid.php" method="post" onSubmit="">
+    <table class="table">
+	
+	<tr>
+    	<td> NISN : </td>
+   		<td> <input type="text" name="NISN" maxlength="10" onkeypress="return hanyaAngka(event)" size="8" required=""> </td>
+    </tr>
+	
+    <tr>
+    	<td> Nama : </td>
+   		<td> <input type="text" name="Nama"> </td>
+    </tr>
+	
+	<tr>
+    	<td> Username : </td>
+   		<td> <select name="Username">
+				<?php 
+				while ($data=mysql_fetch_array($hasil))
+				{
+					echo "<option value='$data[username]'> $data[username] </option> ";
+				}
+				?>
+			 </select>
+		</td>
+    </tr>
+	
+	<tr>
+    	<td> Kota : </td>
+   		<td> <input type="text" name="Kota"> </td>
+    </tr>
+	
+	<tr>
+    	<td> Jenis Kelamin : </td>
+   		<td><select name="Jenis_Kelamin">
+    			<option value="Laki-Laki" selected> Laki-Laki </option>
+				<option value="Perempuan"> Perempuan </option>
+			</select>
+		</td>
+    </tr>
+	
+	<tr>
+    	<td> Agama : </td>
+   		<td><select name="Agama">
+    			<option value="Islam" selected> Islam </option>
+				<option value="Kristen"> Kristen </option>
+				<option value="Katolik"> Katolik </option>
+				<option value="Hindu" > Hindu </option>
+				<option value="Buddha"> Buddha </option>
+				<option value="Kong_Hu_Cu"> Kong Hu Cu </option>
+			</select>
+		</td>
+    </tr>
     
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
+    <tr>
+    	<td> Jurusan : </td>
+        <td> <select name="Jurusan">
+    			<option value="AP" selected> AP </option>
+				<option value="RPL"> RPL </option>
+				<option value="TKR"> TKR </option>
+			 </select>
+       	</td>
+    </tr>
+    
+    <tr>
+    	<td>Kelas : </td>
+        <td><select name="Kelas">
+    			<option value="10" selected> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+			</select>
+      	</td>
+ 	</tr>
+    </table>
+    
+    <button class="btn btn-primary"> Simpan </button>
+	<a href="murid.php" class="btn btn-primary"> Batal </a>
+    
+    </form>
+    
     </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
-		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
-    </div>
-    
+        
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 
-<!-- //Admin Pannel -->
+<script type="text/javascript">
+function hanyaAngka(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+    return false;
+    return true;
+}
+</script>
+
+<!-- //Murid -->
 
 <!-- footer -->
 

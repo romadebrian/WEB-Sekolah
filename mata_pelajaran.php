@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -6,7 +5,7 @@
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="SMK TERPADU" />
+<meta name="keywords" content="SMK Terpadu" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--// Meta tag Keywords -->
@@ -26,69 +25,54 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <body>
 
 <?php include ('../napigasi2.php'); ?>
+<div class="clearfix"> </div> 	
 
-<div class="clearfix"> </div> 
-<!-- //Modal2 -->
-	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
+<!-- Mata Pelajaran -->
+<div id="Akun_Control">
 	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+    <h3 class="w3l-title"> Mata Pelajaran </h3>    
+    <a href="tambah_mata_pelajaran.php"> <button class="btn"> Tambah Mata Pelajaran </button> </a>
+    <div>
+    	<table class="table table-bordered text-center">
+        <tr>
+        	<td><b> Kode Mata Pelajaran </td>
+            <td><b> Nama Mata Pelajaran </td>
+			<td><b> Nama Guru </td>
+			<td width="100"><b> Kelas </td>
+			<td width="100"><b> Jurusan </td>
+            <td colspan="2" ><b> Aksi </td>
+        </tr>
+        
+<?php
+include ('../koneksi.php');
+$tampil="SELECT * FROM `mata_pelajaran`";
+$hasil=mysql_query($tampil);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
-    
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
-    </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
+while ($data=mysql_fetch_array($hasil))
+{	
+	$tampil_guru="SELECT * FROM `guru` WHERE nip = '$data[nip]'";
+	$hasil_guru=mysql_query($tampil_guru);
+	$data_guru=mysql_fetch_array($hasil_guru);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
-		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
+	echo "	</TR>
+			<td> $data[kode_mata_pelajaran] </td>
+            <td> $data[nama_matapelajaran] </td>
+			<td> $data_guru[nama_guru] </td>
+			<td width='100'> $data[kelas] </td>
+			<td width='100'> $data[jurusan] </td>
+			<td width='100'><a href='mata_pelajaran_edit.php?kode=$data[kode_mata_pelajaran]'> Edit </a></td>
+			<td width='100'><a href='Hapus_Mata_Pelajaran.php?kode=$data[kode_mata_pelajaran]'> Hapus</a></td>
+			</TR>";
+}		
+?>        
+        </table>
     </div>
     
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 
-<!-- //Admin Pannel -->
+<!-- //Mata Pelajaran -->
 
 <!-- footer -->
 

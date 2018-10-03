@@ -1,4 +1,6 @@
-
+<?php
+include ('../koneksi.php');
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -6,7 +8,7 @@
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="SMK TERPADU" />
+<meta name="keywords" content="SMK Terpadu" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--// Meta tag Keywords -->
@@ -30,61 +32,52 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <div class="clearfix"> </div> 
 <!-- //Modal2 -->
 	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
+<!-- Akun Control -->
+<div id="Akun_Control">
 	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+    <h3 class="w3l-title"> Akun Control </h3>
+    
+    <a href="tambah_akun.php"> <button class="btn"> Tambah Akun </button> </a>
+    <div>
+    	<table class="table table-bordered text-center">
+        <tr>
+        	<td><b> Username </td>
+            <td width="150"><b> Level </td>
+            <td colspan="2" ><b> Aksi </td>
+        </tr>
+        
+<?php	
+$tampil="SELECT * FROM `akun` ORDER BY `akun`.`username` ASC  ";
+$hasil=mysql_query($tampil);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
-    
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
-    </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
+while ($data=mysql_fetch_array($hasil))
+{
+	if ($data['level'] == 1)
+	{
+		$Level = "Admin";
+	}
+	else if ($data['level'] == 2)
+	{
+		$Level = "Guru";
+	}
+	else
+	{
+		$Level = "Murid";
+	}
+	
+	echo "<td class='text-left'>$data[username]</TD>";
+	echo "<td>$Level</TD>";
+	echo "<td width='100'><a href='akun_edit.php?kode=$data[username]'>Edit </a></td>";
+	echo "<td width='100'><a href='Hapus_Akun.php?kode=$data[username]'> Hapus</a></td>
+</TR>";
+}
 		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
+?>
+        
+        </table>
     </div>
     
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 

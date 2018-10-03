@@ -1,4 +1,6 @@
-
+<?php
+include ('../koneksi.php');
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -27,74 +29,63 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <?php include ('../napigasi2.php'); ?>
 
-<div class="clearfix"> </div> 
-<!-- //Modal2 -->
-	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
+<div class="clearfix"> </div> 	
+<!-- Murid -->
+<div id="Murid">
 	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+    <h3 class="w3l-title"> Murid </h3>
+    
+    <a href="tambah_murid.php"> <button class="btn"> Tambah Murid </button> </a>
+    <div>
+    	<table class="table table-bordered text-center">
+        <tr>
+			<td width="130"><b> NISN </td>
+        	<td><b> Nama </td>
+			<td><b> Username </td>
+            <td width="100"><b> Kota </td>
+            <td width="150"><b> Jenis Kelamin </td>
+			<td width="100"><b> Agama </td>
+            <td width="80"><b> Kelas </td>
+            <td width="100"><b> Jurusan </td>
+            <td colspan="2" ><b> Aksi </td>
+        </tr>
+	
+<?php	
+$tampil="SELECT * FROM `murid` ORDER BY `murid`.`nisn` ASC ";
+$hasil=mysql_query($tampil);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
-    
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
-    </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
+while ($data=mysql_fetch_array($hasil))
+{
+	echo "<td> $data[nisn] </td>";
+	echo "<td class='text-left'> $data[nama_murid] </td>";
+	echo "<td><b> $data[username] </td>";
+	echo "<td> $data[kota] </td>";
+	echo "<td> $data[jenkel] </td>";
+	echo "<td> $data[agama] </td>";
+	echo "<td> $data[kelas] </td>";
+	echo "<td> $data[jurusan] </td>";
+	echo "<td width='80'><a href='murid_edit.php?kode=$data[nisn]'>Edit </a></td>";
+	echo "<td width='80'><a href='Hapus_Murid.php?kode=$data[nisn]'> Hapus</a></td>
+</TR>";
+}
 		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
+?>
+
+		
+        </table>
     </div>
     
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 
-<!-- //Admin Pannel -->
+<!-- //Murid -->
 
 <!-- footer -->
 
 <div class="w3layouts_copy_right">
 	<div class="container">
-		<p>© 2018 SMK TERPADU </p>
+		<p>© 2017 Scholarly. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
 	</div>
 </div>
 <!-- //footer -->

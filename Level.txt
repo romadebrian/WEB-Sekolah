@@ -1,3 +1,0 @@
-Level 1 = Admin
-Level 2 = Guru
-Level 3 = Murid

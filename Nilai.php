@@ -6,7 +6,7 @@
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="SMK TERPADU" />
+<meta name="keywords" content="Scholarly web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--// Meta tag Keywords -->
@@ -27,68 +27,43 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <?php include ('../napigasi2.php'); ?>
 
-<div class="clearfix"> </div> 
-<!-- //Modal2 -->
-	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
-	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+<div class="clearfix"> </div>
+<!-- Pilih Mata Pelajaran -->
+<div id="Pilih_Mata_Pelajaran">
+	<div class="container roma-batasan">
+	<form action="Input_Nilai.php" method="post">
+	<table class="table roma-table" border=0>
+		<tr>
+			<td>Mata Pelajaran :</td>
+			<td>
+				<select name="Mata_Pelajaran">
+				
+<?php
+include ('../koneksi.php');
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
-    
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
-    </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
+$tampil="SELECT * FROM `mata_pelajaran`";
+$hasil=mysql_query($tampil);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
+while ($data=mysql_fetch_array($hasil))
+{
+	echo "	<option value='$data[nama_matapelajaran]'>$data[nama_matapelajaran]</option> ";
+}
 		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
-    </div>
-    
-    <div class="clearfix margin-bawah"></div>
-    
-    </div>
+?>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan=2 align="left" ><button class="btn btn-primary"> Tampilkan </button> </td>
+		</tr>
+	</table>
+	</form>
+	</div>
 </div>
 
-<!-- //Admin Pannel -->
+<!-- //Pilih Pata Pelajaran -->
+
 
 <!-- footer -->
 
