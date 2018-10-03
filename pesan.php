@@ -1,4 +1,6 @@
-
+<?php
+include ('../koneksi.php');
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -28,67 +30,51 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <?php include ('../napigasi2.php'); ?>
 
 <div class="clearfix"> </div> 
-<!-- //Modal2 -->
+<!-- Pesan -->
+<div id="Akun_Control">
+	<div class="container mar">
+    <h3 class="w3l-title">Pesan</h3>
+        
+    <div class="margin-atas">
+    	<table class="table table-bordered text-center">
+        <tr>
+        	<td width="100"><b> Tanggal </td>
+			<td><b> Subject </td>
+			<td><b> Nama </td>
+			<td><b> Email </td>
+			<td width="150"><b> Nomor Handphone </td>
+            <td><b> Pesan </td>
+            <td width="50"><b> Aksi </td>
+        </tr>
 	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
-	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
+<?php	
+$tampil="SELECT * FROM `pesan` ORDER BY `pesan`.`Tanggal` ASC ";
+$hasil=mysql_query($tampil);
 
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
-    
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
-    </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
+while ($data=mysql_fetch_array($hasil))
+{
+	echo "
+		<tr>
+        	<td> $data[Tanggal] </td>
+			<td class='text-left'> $data[Subject] </td>
+			<td class='text-left'> $data[Nama] </td>
+			<td class='text-left'> $data[Email] </td>
+            <td> $data[No_HP] </td>
+			<td> $data[Isi] </td>		
+            <td width='100'> <a href='Hapus_Pesan.php?kode=$data[Isi]'> Hapus</a> </td>
+        </tr>";
+}
 		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
+?> 
+		
+        </table>
     </div>
     
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 
-<!-- //Admin Pannel -->
+<!-- //Pesan -->
 
 <!-- footer -->
 

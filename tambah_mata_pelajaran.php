@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -26,69 +25,87 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <body>
 
 <?php include ('../napigasi2.php'); ?>
-
 <div class="clearfix"> </div> 
-<!-- //Modal2 -->
-	
-<!-- Admin Pannel -->
-<div id="Admin_Pannel">
+
+<!-- Tambah Mata Pelajaran -->
+<div id="Edit_Akun">
 	<div class="container">
-	  <h3 class="w3l-title"> Admin Pannel </h3>
-	  <div class="team-w3l-grid margin-atas">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="akun.php"> <img src="image/a.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Akun <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="murid.php"> <img src="image/m.png" class="about_img" width="250" height="250" >
-            <p class="detail_img"> Murid <p> </a>
-            </div>
-		</div>
+    <h3 class="w3l-title cl"> Tambah Mata Pelajaran </h3>
+    <div class="container margin-atas">
+	
+<?php 
+include ('../koneksi.php');
+$tampil="SELECT * FROM `guru`";
+$hasil=mysql_query($tampil);
+?>
+	
+    <form class="form-group" action="Proses_Input_Mata_Pelajaran.php" method="post">
+    <table class="table">
+    <tr>
+    	<td> Kode Mata Pelajaran : </td>
+   		<td> <input type="text" name="Kode" onkeypress="return hanyaAngka(event)" required=""> </td>
+    </tr>
     
-    	<div class="col-md-4 col-xs-4 t3">
-			<div class="about_img">
-			<a href="guru.php"> <img src="image/g.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Guru <p></a>
-            </div>
-		</div>
-        <div class="clearfix"></div>
+    <tr>
+    	<td> Nama Mata Pelajaran : </td>
+        <td> <input type="text" name="Nama_Mata_Pelajaran"> </td>
+    </tr>
+	
+	<tr>
+    	<td> Nama Guru : </td>
+   		<td> <select name="NIP">
+				<?php 
+				while ($data=mysql_fetch_array($hasil))
+				{
+					echo "<option value='$data[nip]'> $data[nama_guru] </option> ";
+				}
+				?>
+			 </select>
+		</td>
+    </tr>
+	
+	<tr>
+    	<td> Jurusan : </td>
+        <td> <select name="Jurusan">
+    			<option value="AP" selected> AP </option>
+				<option value="RPL"> RPL </option>
+				<option value="TKR"> TKR </option>
+			 </select>
+       	</td>
+    </tr>	
+    
+    <tr>
+    	<td>Kelas : </td>
+        <td><select name="Kelas">
+    			<option value="10" selected> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+			</select>
+      	</td>
+ 	</tr>
+    </table>
+    
+    <button class="btn btn-primary"> Simpan </button>
+    <a href="mata_pelajaran.php" class="btn btn-primary"> Batal </a>
+    </form>
+    
     </div>
-    
-    <br>
-    
-    <div class="team-w3l-grid grid-2-team">
-    	<div class="col-md-4 col-xs-4 t1">
-			<div class="about_img">
-			<a href="Nilai.php"> <img src="image/n.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Nilai <p></a>
-            </div>
-		</div>
-
- 	  	<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="pesan.php"> <img src="image/e.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Email <p></a>
-            </div>
-		</div>
-		
-		<div class="col-md-4 col-xs-4 t2">
-			<div class="about_img">
-			<a href="mata_pelajaran.php"> <img src="image/mpl.png" class="about_img" width="250" height="250" > 
-            <p class="detail_img"> Mata Pelajaran <p></a>
-            </div>
-		</div>
-    </div>
-    
+        
     <div class="clearfix margin-bawah"></div>
-    
     </div>
 </div>
 
-<!-- //Admin Pannel -->
+<script type="text/javascript">
+function hanyaAngka(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+    return false;
+    return true;
+}
+</script>
+
+<!-- //Tambah Mata Pelajaran -->
 
 <!-- footer -->
 
