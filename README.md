@@ -36,8 +36,10 @@ password	: 1 <br>
  - Murid
    + Melihat Nilai
    
-############################################  
-Yang akan di bikin
+###################  BUGS  #########################
+ ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
+ 
+###################  Yang akan di bikin  #########################  
 - Encrypt Password HASH tersendiri
 - System log mencatat waktu, IP addres, dan MAC addres ketika login
 - Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
