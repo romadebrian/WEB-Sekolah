@@ -37,7 +37,7 @@ password	: 1 <br>
    + Melihat Nilai
    
 ###################  BUGS  #########################
- ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
+-ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
  
 ###################  Yang akan di bikin  #########################  
 - Encrypt Password HASH tersendiri
