@@ -37,7 +37,8 @@ password	: 1 <br>
    + Melihat Nilai
    
 ###################  BUGS  #########################
--ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
+- Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at /storage/ssd2/019/12549019/public_html/index.php:28) in /storage/ssd2/019/12549019/public_html/napigasi.php on line 23
+- ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
  
 ###################  Yang akan di bikin  #########################  
 - Encrypt Password HASH tersendiri
@@ -54,5 +55,5 @@ password	: 1 <br>
   + Manajemen Fasilitas
   + Pengaturan Title, Keyword, Logo, dan warna
 
-Jika ada pertanyaan bisa langsung tanya ke https://www.facebook.com/romadebrian 
+Jika ada pertanyaan bisa langsung tanya ke https://www.facebook.com/romadebrian <br>
 Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!!
