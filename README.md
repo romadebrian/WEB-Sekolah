@@ -38,7 +38,7 @@ password	: 1 <br>
    
 ###################  BUGS  #########################
 - Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at /storage/ssd2/019/12549019/public_html/index.php:28) in /storage/ssd2/019/12549019/public_html/napigasi.php on line 23
-- ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
+- Ketika sudah login trus klik fasilitas tombol login dan daftar masih ada
  
 ###################  Yang akan di bikin  #########################  
 - Encrypt Password HASH tersendiri
