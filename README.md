@@ -1,7 +1,7 @@
 # WEB-Sekolah
  Content management system (CMS) untuk Web sekolah <br>
  Untuk contoh runningnya bisa di lihat di sini <br>
- https://cms-web-sekolah.000webhostapp.com/
+ https://cms-websekolah.000webhostapp.com/
  
 Admin <br>
 username	: roma <br>
@@ -54,4 +54,5 @@ password	: 1 <br>
   + Manajemen Fasilitas
   + Pengaturan Title, Keyword, Logo, dan warna
 
+Jika ada pertanyaan bisa langsung tanya ke https://www.facebook.com/romadebrian 
 Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!!
