@@ -59,4 +59,4 @@ password	: 1 <br>
 Jika ada pertanyaan bisa langsung tanya ke https://www.facebook.com/romadebrian <br>
 Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!!
 
-Join our project https://github.com/users/romadebrian/projects/2
+Join our project https://github.com/users/romadebrian/projects/2 
