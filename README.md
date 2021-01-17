@@ -2,7 +2,7 @@
  Content management system (CMS) untuk Web sekolah <br>
  Untuk contoh runningnya bisa di lihat di sini <br>
  
- https://cms-websekolah.000webhostapp.com/
+https://cms-websekolah2.000webhostapp.com/
  
 Admin <br>
 username	: roma <br>
