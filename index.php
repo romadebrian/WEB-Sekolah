@@ -1,4 +1,4 @@
-<?php include ('napigasi.php'); ?>
+<?php include ('napigasi.php'); ?> <!-- PINDAH POSISINYA-->
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
