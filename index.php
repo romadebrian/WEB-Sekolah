@@ -1,4 +1,4 @@
-
+<?php include ('napigasi.php'); ?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -26,7 +26,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
 
-<?php include ('napigasi.php'); ?>
+
 
 <div class="clearfix"> </div> 
 <!-- Slideshoww -->	
