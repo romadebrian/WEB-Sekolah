@@ -85,7 +85,7 @@ color : #000000;
 			
 			
 			<?php
-			session_start();
+			@session_start();
 			if (empty($_SESSION['user']))
 			{
 				//echo "<a href='./Login'> Login </a>";
