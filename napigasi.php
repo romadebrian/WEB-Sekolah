@@ -20,7 +20,7 @@
 			</div>
 			
 			<?php
-			session_start();
+			@session_start();
 			if (empty($_SESSION['username']))
 			{
 				//echo "<a href='./Login'> Login </a>";
