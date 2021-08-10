@@ -38,7 +38,7 @@ password	: 1 <br>
    + Melihat Nilai
    
 ###################  BUGS  #########################
-- Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at /storage/ssd2/019/12549019/public_html/index.php:28) in /storage/ssd2/019/12549019/public_html/napigasi.php on line 23
+- tulis di sini jika ada atau tulis di menu Issues
  
 ###################  Yang akan di bikin  #########################  
 - Encrypt Password HASH tersendiri
