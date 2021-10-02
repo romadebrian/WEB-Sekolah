@@ -41,13 +41,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/MURID1.jpg"alt="...">
+      <img src="images/MURID1.jpg" alt="gambar 1" style="width:100%; height: 500px">
     </div>
     <div class="item">
-      <img src="images/MURID2.jpg" alt="...">      
+      <img src="images/MURID2.jpg" alt="gambar 2" style="width:100%; height: 500px">      
     </div>
 	<div class="item">
-      <img src="images/MURID3.jpg" alt="...">
+      <img src="images/MURID3.jpg" alt="gambar 3" style="width:100%; height: 500px">
     </div>
   </div>
 
