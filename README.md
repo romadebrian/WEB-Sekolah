@@ -41,7 +41,8 @@ password	: 1 <br>
 ###################  BUGS  #########################
 - tulis di sini jika ada atau tulis di menu Issues
  
-###################  Yang akan di bikin  #########################  
+###################  Next Update  #########################  
+- Penggunaan inlude page
 - Encrypt Password HASH tersendiri
 - System log mencatat waktu, IP addres, dan MAC addres ketika login
 - Title WEB bisa di ganti di CMS Pannel Admin dan konsisten dengan semua page
