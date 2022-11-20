@@ -42,6 +42,7 @@ password	: 1 <br>
 - tulis di sini jika ada atau tulis di menu Issues
  
 ###################  Next Update  #########################  
+- ganti template
 - Penggunaan inlude page
 - Encrypt Password HASH tersendiri
 - System log mencatat waktu, IP addres, dan MAC addres ketika login
