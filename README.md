@@ -3,7 +3,7 @@
  Untuk contoh runningnya bisa di lihat di sini <br>
  Project ini hanya memakai bootstrap v3 dan tidak memakai framework lain 
  
-https://cms-websekolah2.000webhostapp.com/
+https://cms-websekolah3.000webhostapp.com/
  
 Admin <br>
 username	: roma <br>
