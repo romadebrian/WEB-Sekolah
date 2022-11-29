@@ -98,10 +98,9 @@ while ($data=mysql_fetch_array($hasil))
 <!-- //Guru -->
 
 <!-- footer -->
-
 <div class="w3layouts_copy_right">
 	<div class="container">
-		<p>© 2018 SMK TERPADU </p>
+		<p>© 2018 SMK TERPADU | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
 	</div>
 </div>
 <!-- //footer -->

@@ -85,7 +85,7 @@ while ($data=mysql_fetch_array($hasil))
 
 <div class="w3layouts_copy_right">
 	<div class="container">
-		<p>© 2017 Scholarly. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
+		<p>© 2018 SMK TERPADU | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
 	</div>
 </div>
 <!-- //footer -->
