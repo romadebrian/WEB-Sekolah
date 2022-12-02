@@ -202,8 +202,8 @@ CREATE TABLE `pesan` (
 --
 
 INSERT INTO `pesan` (`Tanggal`, `Subject`, `Nama`, `Email`, `No_HP`, `Isi`) VALUES
-('18-05-2018', 'Test', 'Roma Debrian', 'Roma_coll04@yahoo.com', 2147483647, 'This messege of ded'),
-('18-05-2018', 'Test', 'Roma Debrian', 'Roma_coll04@yahoo.com', 2147483647, 'ini adalah pesan kematian');
+('18-05-2018', 'Test', 'Roma Debrian', 'test@yahoo.com', 2147483647, 'This messege of ded'),
+('18-05-2018', 'Test', 'Roma Debrian', 'test@yahoo.com', 2147483647, 'ini adalah pesan kematian');
 
 --
 -- Indexes for dumped tables
