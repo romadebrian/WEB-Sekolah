@@ -46,7 +46,7 @@ $hasil=mysql_query($tampil);
 	
 	<tr>
     	<td> NISN : </td>
-   		<td> <input type="text" name="NISN" maxlength="10" onkeypress="return hanyaAngka(event)" size="8" required=""> </td>
+   		<td> <input type="text" name="NISN" maxlength="10" onkeypress="return hanyaAngka(event)" size="10" required=""> </td>
     </tr>
 	
     <tr>

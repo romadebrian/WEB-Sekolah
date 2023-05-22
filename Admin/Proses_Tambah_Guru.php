@@ -10,7 +10,7 @@ $Jenis_Kelamin = $_POST['jenis_kelamin'];
 $Agama = $_POST['agama'];
 
 $sqlstr="INSERT INTO `guru` (`nip`, `nama_guru`, `no_hp`, `jenkel`, `agama`, `username`) VALUES ('$NIP', '$Nama_Guru', '$No_Telepon', '$Jenis_Kelamin', '$Agama', '$Username');";
-(mysql_query($sqlstr));
+(mysqlis_query($sqlstr));
 
 header('location:guru.php');
 ?>

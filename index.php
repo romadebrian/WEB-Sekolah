@@ -66,7 +66,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Event -->
 <div class="jumbotron">
   <div class="container">
-   <h1>EVENT SEKOLAHAN</h1>
+   <h1>EVENT SEKOLAH</h1>
    <!-- Thumbniell-->
    
 <div class="row margin-atas">
