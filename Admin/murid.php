@@ -52,9 +52,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	
 <?php	
 $tampil="SELECT * FROM `murid` ORDER BY `murid`.`nisn` ASC ";
-$hasil=mysql_query($tampil);
+$hasil=mysqli_query($koneksi, $tampil);
 
-while ($data=mysql_fetch_array($hasil))
+while ($data=mysqli_fetch_array($hasil))
 {
 	echo "<td> $data[nisn] </td>";
 	echo "<td class='text-left'> $data[nama_murid] </td>";

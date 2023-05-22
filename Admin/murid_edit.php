@@ -36,11 +36,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	
 <?php
 $Kode=$_GET['kode'];
-$query=mysql_query("select * from murid where nisn='$Kode'");
-$data=mysql_fetch_array($query);
+$query=mysqli_query($koneksi, "select * from murid where nisn='$Kode'");
+$data=mysqli_fetch_array($query);
 
 $tampil_akun="SELECT * FROM `akun` ORDER BY `username` ASC ";
-$hasil_akun=mysql_query($tampil_akun);
+$hasil_akun=mysqli_query($koneksi, $tampil_akun);
 ?>
 	
     <form class="form-group" action="Proses_Edit_Murid.php" method="post" onSubmit="">
@@ -65,7 +65,7 @@ $hasil_akun=mysql_query($tampil_akun);
    		<td> <select name="Username">
 				<?php
 				echo "<option value='$data[username]' selected> $data[username] </option>";
-				while ($data_akun=mysql_fetch_array($hasil_akun))
+				while ($data_akun=mysqli_fetch_array($hasil_akun))
 				{
 					echo "<option value='$data_akun[username]'> $data_akun[username] </option> ";
 				}

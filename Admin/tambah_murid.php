@@ -37,7 +37,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <?php 
 include ('../koneksi.php');
 $tampil="SELECT * FROM `akun` ORDER BY `username` ASC ";
-$hasil=mysql_query($tampil);
+$hasil=mysqli_query($koneksi, $tampil);
 ?>
 
 	
@@ -58,7 +58,7 @@ $hasil=mysql_query($tampil);
     	<td> Username : </td>
    		<td> <select name="Username">
 				<?php 
-				while ($data=mysql_fetch_array($hasil))
+				while ($data=mysqli_fetch_array($hasil))
 				{
 					echo "<option value='$data[username]'> $data[username] </option> ";
 				}
