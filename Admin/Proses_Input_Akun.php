@@ -5,11 +5,11 @@ $Username = $_POST['Username'];
 $Password = md5($_POST['Password']);
 $Level = $_POST['Level'];
 
-$sql = mysql_query("SELECT * FROM `akun` WHERE username = '$Username' ") or die(mysql_error());
-if(mysql_num_rows($sql) == 0)
+$sql = mysqli_query($koneksi,"SELECT * FROM `akun` WHERE username = '$Username' ") or die(mysql_error());
+if(mysqli_num_rows($sql) == 0)
 {
 	$input_akun="INSERT INTO `akun` (`username`, `password`, `level`) VALUES ('$Username', '$Password', '$Level');";
-	(mysql_query($input_akun));
+	(mysqli_query($koneksi, $input_akun));
 	header('location:akun.php');
 }
 else

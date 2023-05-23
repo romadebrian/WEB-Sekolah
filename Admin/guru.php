@@ -52,9 +52,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	
 <?php	
 $tampil="SELECT * FROM `guru`";
-$hasil=mysql_query($tampil);
+$hasil=mysqli_query($koneksi, $tampil);
 
-while ($data=mysql_fetch_array($hasil))
+while ($data=mysqli_fetch_array($hasil))
 {
 			if ($data['agama'] == "Islam")
 			{$Agama = "Islam";}

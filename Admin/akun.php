@@ -43,14 +43,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
         <tr>
         	<td><b> Username </td>
             <td width="150"><b> Level </td>
-            <td colspan="2" ><b> Aksi </td>
+            <td colspan="2"><b> Aksi </td>
         </tr>
         
 <?php	
 $tampil="SELECT * FROM `akun` ORDER BY `akun`.`username` ASC  ";
-$hasil=mysql_query($tampil);
+$hasil=mysqli_query($koneksi, $tampil);
 
-while ($data=mysql_fetch_array($hasil))
+while ($data=mysqli_fetch_array($hasil))
 {
 	if ($data['level'] == 1)
 	{

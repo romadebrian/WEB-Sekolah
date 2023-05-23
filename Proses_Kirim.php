@@ -7,7 +7,7 @@ $input="INSERT INTO `pesan` (`Tanggal`, `Subject`, `Nama`, `Email`, `No_HP`, `Is
 
 
 
-mysql_query($input);
+mysqli_query($koneksi, $input);
 if ($input) 
 {
 echo	"<script>	alert('Pesan Terkirim'); document.location='index.php'; </script>";
@@ -16,5 +16,3 @@ echo	"<script>	alert('Pesan Terkirim'); document.location='index.php'; </script>
 else{
 echo	"<script>	alert('Pesan Gagal Di Kirim'); document.location='index.php'; </script>";
 }
-
-?>

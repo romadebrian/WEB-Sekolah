@@ -20,7 +20,7 @@ else
 	$sqlstr="UPDATE `murid` SET `nisn` = '$NISN',`nama_murid` = '$Nama', `username` = '$Username',`kota` = '$Kota', `jenkel` = '$Jenis_Kelamin', `agama` = '$Agama', `jurusan` = '$Jurusan', `kelas` = '$Kelas' WHERE `murid`.`nisn` = '$NISN_Lama';";
 }
 
-(mysql_query($sqlstr));
+(mysqli_query($koneksi, $sqlstr));
 
 header('location:murid.php');
 ?>

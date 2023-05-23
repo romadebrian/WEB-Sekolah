@@ -2,6 +2,7 @@
 include "../koneksi.php";
 
 $Username_Lama = $_POST['Username_Lama'];
+$Username_Baru = $_POST['Username_Baru'];
 $Password = md5($_POST['Password']);
 $Level = $_POST['Level'];
 
@@ -23,7 +24,7 @@ else
 	$sqlstr="UPDATE `akun` SET `username` = '$Username_Baru', `Password` = '$Password', `level` = '$Level' WHERE `username` = '$Username_Lama';";
 }
 
-(mysql_query($sqlstr));
+(mysqli_query($koneksi, $sqlstr));
 
 header('location:akun.php');
 ?>

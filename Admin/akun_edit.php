@@ -38,8 +38,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	
 <?php
 $Kode=$_GET['kode'];
-$query=mysql_query("select * from akun where username='$Kode'");
-$data=mysql_fetch_array($query);
+$query=mysqli_query($koneksi, "select * from akun where username='$Kode'");
+$data=mysqli_fetch_array($query);
 
 $Password = md5($data['password']);
 $Level = $data['level'];

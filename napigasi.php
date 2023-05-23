@@ -172,7 +172,7 @@
 				<div class="signin-form profile">
 					<h3 class="agileinfo_sign">Masuk</h3>	
 					<div class="login-form">
-						<form action="peroses_login.php" method="post">
+						<form action="proses_login.php" method="post">
 							<input type="text" name="username" placeholder="Username" required="">
 							<input type="password" name="password" placeholder="Password" required="">
 							<div class="tp">
