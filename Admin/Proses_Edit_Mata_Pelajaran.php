@@ -17,7 +17,6 @@ else
 	$sqlstr="UPDATE `mata_pelajaran` SET kode_mata_pelajaran = '$Kode_Baru', `nama_matapelajaran` = '$Nama_Mata_Pelajaran', `kelas` = '$Kelas', `jurusan` = '$Jurusan', `nip` = '$NIP' WHERE `kode_mata_pelajaran` = '$Kode_Lama' ;";
 }
 
-(mysql_query($sqlstr));
+(mysqli_query($koneksi, $sqlstr));
 
 header('location:mata_pelajaran.php');
-?>
