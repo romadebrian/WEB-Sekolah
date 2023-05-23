@@ -42,9 +42,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 include ('../koneksi.php');
 
 $tampil="SELECT * FROM `mata_pelajaran`";
-$hasil=mysql_query($tampil);
+$hasil=mysqli_query($koneksi, $tampil);
 
-while ($data=mysql_fetch_array($hasil))
+while ($data=mysqli_fetch_array($hasil))
 {
 	echo "	<option value='$data[nama_matapelajaran]'>$data[nama_matapelajaran]</option> ";
 }
