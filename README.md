@@ -39,7 +39,7 @@ password	: 1 <br>
    + Melihat Nilai
    
 # Screenshot
-<img src=https://roma3.000webhostapp.com/Screenshot/poster%20andro.jpg />
+<img src=https://github.com/romadebrian/WEB-Sekolah/blob/master/Screenshot.png />
 
 ###################  BUGS  #########################
 - tulis di sini jika ada atau tulis di menu Issues
