@@ -17,7 +17,7 @@ else
 {
 	$sqlstr="UPDATE `guru` SET nip = '$NIP', `nama_guru` = '$Nama_Guru', username = '$Username',`no_hp` = '$No_Telepon', `jenkel` = '$Jenis_Kelamin', `agama` = '$Agama' WHERE `guru`.`nip` = '$NIP_Lama';";
 }
-(mysqli_query($sqlstr));
+(mysqli_query($koneksi, $sqlstr));
 
 header('location:guru.php');
 ?>
