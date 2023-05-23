@@ -48,7 +48,6 @@ include "../koneksi.php";
 	$data_mapel = mysqli_fetch_array($hasil_mapel)
 	?>
 
-
 	<div id="Input Nilai">
 		<div class="container roma-batasan">
 			<form action="process_guru.php" method="post">
