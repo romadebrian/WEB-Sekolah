@@ -1,50 +1,54 @@
 # WEB-Sekolah
- Content management system (CMS) untuk Web sekolah <br>
- Untuk contoh runningnya bisa di lihat di sini <br>
- Project ini hanya memakai bootstrap v3 dan tidak memakai framework lain 
- 
+
+Content management system (CMS) untuk Web sekolah <br>
+Untuk contoh runningnya bisa di lihat di sini <br>
+Project ini hanya memakai bootstrap v3 dan tidak memakai framework lain
+
 https://cms-websekolah3.000webhostapp.com/
- 
+
 Admin <br>
-username	: roma <br>
-password	: 1 
+username : roma <br>
+password : 1
 
 Guru <br>
-username	: hendika <br>
-password	: 1 <br>
+username : hendika <br>
+password : 1 <br>
 
 Murid <br>
-username	: okky <br>
-password	: 1 <br>
+username : okky <br>
+password : 1 <br>
 
+Fitur
 
- Fitur
- - Login
- - Level Akun
- - Contact US
- 
- Level Akses
- - Admin
-   + Akun Control
-   + Manajemen Murid
-   + Manajemen Guru
-   + Manajemen Nilai
-   + Email / Contact masuk  
-   + Manajemen Matapelajaran
-   
- - Guru
-   + Manajemen Nilai
-   
- - Murid
-   + Melihat Nilai
-   
+- Login
+- Level Akun
+- Contact US
+
+Level Akses
+
+- Admin
+  - Akun Control
+  - Manajemen Murid
+  - Manajemen Guru
+  - Manajemen Nilai
+  - Email / Contact masuk
+  - Manajemen Matapelajaran
+- Guru
+  - Manajemen Nilai
+- Murid
+  - Melihat Nilai
+
 # Screenshot
-<img src=https://github.com/romadebrian/WEB-Sekolah/blob/master/Screenshot.png />
 
-###################  BUGS  #########################
+<img src=https://github.com/romadebrian/WEB-Sekolah/blob/master/screenshot/beranda.png />
+<img src=https://github.com/romadebrian/WEB-Sekolah/blob/master/screenshot/admin.png />
+
+################### BUGS #########################
+
 - tulis di sini jika ada atau tulis di menu Issues
- 
-###################  Next Update  #########################  
+
+################### Next Update #########################
+
 - ganti template
 - Penggunaan inlude page
 - Encrypt Password HASH tersendiri
@@ -54,12 +58,12 @@ password	: 1 <br>
 - Page Profil
 - Page Daftar seperti web sekolah pada umumnya (standar)
 - Bikin Pannel Pengaturan WEB
-  + Manajemen Posting
-  + Manajemen Beranda
-  + Manajemen Sejarah Sekolah
-  + Manajemen Jurusan
-  + Manajemen Fasilitas
-  + Pengaturan Title, Keyword, Logo, dan warna
+  - Manajemen Posting
+  - Manajemen Beranda
+  - Manajemen Sejarah Sekolah
+  - Manajemen Jurusan
+  - Manajemen Fasilitas
+  - Pengaturan Title, Keyword, Logo, dan warna
 
 Jika ada pertanyaan bisa langsung tanya ke https://www.facebook.com/romadebrian <br>
 Tolong berikan masukan dan saran di sini atau jika ada bugs tolong tulis di issues!!
